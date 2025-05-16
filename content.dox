@@ -1,0 +1,110 @@
+/**\mainpage Auto-generated Documentation
+```doxygen
+/*! \mainpage Sudoku Solver with PythonGeeks
+
+\section intro_sec Introduction
+
+This documentation describes the architecture and functionality of the Sudoku solver implemented in Python using the Pygame library. The solver fetches Sudoku puzzles from an external API, visualizes the puzzle using Pygame, and solves it using a backtracking algorithm.
+
+\section architecture_sec Architecture
+
+The application is structured into the following logical layers:
+
+- **Data Layer:** Fetches Sudoku puzzles from an external API.
+- **Service Layer:** Contains the core Sudoku solving logic, including validation and backtracking.
+- **Presentation Layer:** Uses Pygame to visualize the Sudoku board and display the solution.
+- **CLI Layer:**  The `main` function initializes the Pygame environment, fetches the board, and starts the application loop.
+
+\subsection modules Modules and their Interactions
+
+The following diagram illustrates the interaction between the modules, classes, and functions within the Sudoku solver.
+
+\dot
+digraph SudokuSolver {
+    rankdir=LR;
+    node [shape=rectangle];
+
+    subgraph cluster_data {
+        label = "Data Layer";
+        style = dashed;
+        api_request [label="requests.get()", shape=component];
+        json_parse [label="response.json()", shape=component];
+        grid_board [label="grid_board", shape=box];
+    }
+
+    subgraph cluster_service {
+        label = "Service Layer";
+        style = dashed;
+        isEmpty [label="isEmpty()", shape=box];
+        isValid [label="isValid()", shape=box];
+        Sudoku_solver [label="Sudoku_solver()", shape=box];
+        solving [label="solving", shape=box];
+    }
+
+    subgraph cluster_presentation {
+        label = "Presentation Layer";
+        style = dashed;
+        pygame_init [label="pygame.init()", shape=component];
+        pygame_display [label="pygame.display", shape=component];
+        pygame_draw [label="pygame.draw", shape=component];
+        pygame_font [label="pygame.font.SysFont", shape=component];
+    }
+
+    subgraph cluster_cli {
+        label = "CLI Layer";
+        style = dashed;
+        main [label="main()", shape=box];
+    }
+
+    # Data Layer connections
+    api_request -> json_parse [label="fetches"];
+    json_parse -> grid_board [label="parses to"];
+
+    # Service Layer connections
+    main -> grid_board [label="initializes with"];
+    Sudoku_solver -> isEmpty [label="uses"];
+    Sudoku_solver -> isValid [label="uses"];
+
+    # Presentation Layer connections
+    main -> pygame_init [label="initializes"];
+    main -> pygame_display [label="manages"];
+    Sudoku_solver -> pygame_draw [label="uses"];
+    main -> pygame_draw [label="uses"];
+    main -> pygame_font [label="initializes"];
+    Sudoku_solver -> pygame_font [label="uses"];
+
+    # CLI Layer connections
+    main -> api_request [label="fetches board"];
+    main -> Sudoku_solver [label="calls"];
+
+    # Solving Variable influence
+    Sudoku_solver -> solving [label="modifies"];
+}
+\enddot
+
+\subsection data_layer Data Layer Details
+The Data Layer uses the `requests` module to fetch the Sudoku board from an external API.  The returned JSON is parsed to create the initial game board.
+
+\subsection service_layer Service Layer Details
+
+The Service Layer contains the core logic for solving the Sudoku puzzle.  `isEmpty()` checks if a cell is empty. `isValid()` checks if a number can be placed in a specific cell according to Sudoku rules. `Sudoku_solver()` recursively solves the puzzle using backtracking.
+
+\subsection presentation_layer Presentation Layer Details
+
+The Presentation Layer uses Pygame to create a visual representation of the Sudoku board. It draws the grid lines, numbers, and updates the display during the solving process.
+
+\subsection cli_layer CLI Layer Details
+
+The CLI layer's `main` function acts as the entry point of the application. It initializes Pygame, fetches the initial Sudoku board, and starts the event loop, handling user input and updating the display.
+
+\section usage_sec Usage
+
+To run the Sudoku solver:
+
+1.  Ensure you have Python installed.
+2.  Install the required libraries: `pip install pygame requests`
+3.  Save the code as `Sudoku_PythonGeeks.py`.
+4.  Run the script: `python Sudoku_PythonGeeks.py`
+*/
+```
+*/

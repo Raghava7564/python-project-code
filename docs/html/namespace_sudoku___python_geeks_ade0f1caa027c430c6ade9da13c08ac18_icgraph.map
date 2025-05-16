@@ -1,0 +1,6 @@
+<map id="Sudoku_PythonGeeks.isValid" name="Sudoku_PythonGeeks.isValid">
+<area shape="rect" id="Node000001" title=" " alt="" coords="253,37,446,64"/>
+<area shape="rect" id="Node000002" href="$namespace_sudoku___python_geeks.html#a57063d58bc8ea085c556114f84ee21b5" title=" " alt="" coords="5,29,205,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,53,205,53,205,48,237,48"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="145,16,130,10,105,8,82,10,68,15,62,21,64,28,59,29,57,19,65,10,81,5,105,3,131,5,147,11"/>
+</map>
