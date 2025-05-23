@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['grid_5fboard_0',['grid_board',['../namespace_sudoku___python_geeks.html#a5adacf05f15d5f9f65cca62c75128d5c',1,'Sudoku_PythonGeeks']]]
+  ['solving_0',['solving',['../namespace_sudoku___python_geeks.html#a2aa46f250f9b223d6f037d6539409b78',1,'Sudoku_PythonGeeks']]]
 ];

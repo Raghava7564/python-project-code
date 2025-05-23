@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['files_0',['Files',['../content_8dox.html#a822587d532d0125fd76d2b4bbec149b8',1,'content.dox']]],
-  ['flow_1',['Flow',['../content_8dox.html#a9e9c699bae35e2e6bf78615ba62df646',1,'content.dox']]]
+  ['main_0',['main',['../namespace_sudoku___python_geeks.html#aead6ae6bf75cfc841461e6ffb2b9d19b',1,'Sudoku_PythonGeeks']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['content_2edox_0',['content.dox',['../content_8dox.html',1,'']]],
-  ['controller_1',['Controller',['../content_8dox.html#a9deaf8a69a27bd4b5c933b5aad04e3d4',1,'content.dox']]]
+  ['grid_5fboard_0',['grid_board',['../namespace_sudoku___python_geeks.html#a5adacf05f15d5f9f65cca62c75128d5c',1,'Sudoku_PythonGeeks']]]
 ];
