@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isempty_0',['isEmpty',['../namespace_sudoku___python_geeks.html#a69eac1790b3fe1ecb96b49b7dc677a4c',1,'Sudoku_PythonGeeks']]],
-  ['isvalid_1',['isValid',['../namespace_sudoku___python_geeks.html#ade0f1caa027c430c6ade9da13c08ac18',1,'Sudoku_PythonGeeks']]]
+  ['diagram_0',['diagram',['../content_8dox.html#a5ea81fa837333ea9e169116bdc83803d',1,'content.dox']]],
+  ['documentation_1',['Auto-generated Documentation',['../index.html',1,'']]]
 ];
