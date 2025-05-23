@@ -1,10 +1,10 @@
 var NAVTREEINDEX0 =
 {
 "_sudoku___python_geeks_8py.html":[1,0,0,0,0,0,0,0,0],
+"dir_127edad2f7426ffa2efe0206bb17dc42.html":[1,0,0,0,0,0,0,0],
 "dir_2e2cf961d4924b6384babb753794eb6a.html":[1,0,0,0,0,0],
 "dir_559004cf293a0dab7dbc8b3429cf516d.html":[1,0,0,0],
 "dir_57f72b5a68868f94b829f3bc2c7260a4.html":[1,0,0,0,0],
-"dir_598ad9fd007401bb3fa4f368be7e3a28.html":[1,0,0,0,0,0,0,0],
 "dir_6c7f5cc01262d39232ed653f1cc16efb.html":[1,0,0,0,0,0,0],
 "dir_b141f62dd48f12a902effdf949a7868b.html":[1,0,0],
 "files.html":[1,0],
