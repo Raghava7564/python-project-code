@@ -1,15 +1,16 @@
 var NAVTREEINDEX0 =
 {
 "_sudoku___python_geeks_8py.html":[2,0,0,0,0,0,0,0,0],
+"dir_243a023b5c62285b45c8a79eed38c9bd.html":[2,0,0,0,0,0,0,0],
 "dir_2e2cf961d4924b6384babb753794eb6a.html":[2,0,0,0,0,0],
 "dir_559004cf293a0dab7dbc8b3429cf516d.html":[2,0,0,0],
 "dir_57f72b5a68868f94b829f3bc2c7260a4.html":[2,0,0,0,0],
 "dir_6c7f5cc01262d39232ed653f1cc16efb.html":[2,0,0,0,0,0,0],
-"dir_a2d6864eb2e250f26427fe3004badbbc.html":[2,0,0,0,0,0,0,0],
 "dir_b141f62dd48f12a902effdf949a7868b.html":[2,0,0],
 "files.html":[2,0],
 "index.html":[],
 "index.html":[0],
+"index.html#javascript_files":[0,0],
 "namespace_sudoku___python_geeks.html":[1,0,0],
 "namespace_sudoku___python_geeks.html#a2aa46f250f9b223d6f037d6539409b78":[1,0,0,9],
 "namespace_sudoku___python_geeks.html#a37b378fd2ca406c7d08ea2556b9c88be":[1,0,0,5],

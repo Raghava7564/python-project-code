@@ -3,70 +3,88 @@
 /*! \mainpage Project Documentation
 
 \section intro_sec Introduction
+This documentation provides an overview of the project's architecture and functionality. It includes diagrams and explanations to help understand the interaction between different modules and components.
 
-This documentation provides an overview of the project's architecture, modules, and interactions.  It aims to give developers a high-level understanding of the codebase.
+\section architecture_sec Project Architecture
 
-\section architecture_sec Architecture Overview
-
-The project follows a modular structure, with distinct modules responsible for specific functionalities. The interactions between these modules are illustrated in the diagram below.
-
-\subsection modules_sec Modules Description
-
-- **clipboard.js:** Manages the "copy to clipboard" functionality for code snippets within the generated documentation.  It dynamically adds copy buttons to code blocks and handles the copy action using the browser's clipboard API.
-- **cookie.js:** Provides utility functions for reading, writing, and erasing cookies. This module is used to persist user settings, such as theme preferences.
-- **dir_*.js:** (Multiple files) Contain directory structures for the Doxygen-generated documentation. These are automatically generated and describe the file hierarchy.
-- **dynsections.js:** Implements dynamic section toggling in the documentation, allowing users to expand and collapse sections of content.
-- **codefold**: Handles code folding, allowing users to collapse/expand code blocks.
-
-\subsection interaction_flow Interaction Flow
-
-The following diagram illustrates the general interaction flow and dependencies between the JavaScript modules.
+The project follows a modular architecture with distinct modules, services, routes, and controllers. The following diagram illustrates the relationship between these components.
 
 \dot
 digraph G {
-    rankdir=LR;
-    node [shape=rectangle];
+    node [shape=box];
 
-    clipboard_js [label="clipboard.js\n(ES6 Module)"];
-    cookie_js [label="cookie.js"];
-    dynsections_js [label="dynsections.js"];
-    dir_js [label="dir_*.js\n(Directory Structure)"];
-    jquery [label="jQuery\n(External Library)"];
-    window [label="window\n(Browser API)"];
-    codefold [label="codefold.js"];
-
-    clipboard_js -> jquery [label="Uses"];
-    clipboard_js -> window [label="Uses\nnavigator.clipboard"];
-    cookie_js -> window [label="Uses\ndocument.cookie\nlocalStorage\nsessionStorage"];
-    dynsections_js -> jquery [label="Uses"];
-    codefold -> jquery [label="Uses"];
-
-    subgraph cluster_documentation {
-        label = "Generated Documentation";
-        clipboard_js;
-        cookie_js;
-        dynsections_js;
-        dir_js;
-        codefold;
+    subgraph cluster_modules {
+        label = "Modules";
+        ModuleA;
+        ModuleB;
     }
 
-    jquery -> window [label="Modifies DOM"];
+    subgraph cluster_services {
+        label = "Services";
+        ServiceX;
+        ServiceY;
+    }
 
+    subgraph cluster_routes {
+        label = "Routes";
+        Route1;
+        Route2;
+    }
+
+    subgraph cluster_controllers {
+        label = "Controllers";
+        ControllerA;
+        ControllerB;
+    }
+
+    ModuleA -> ServiceX;
+    ModuleA -> ServiceY;
+    ModuleB -> ServiceY;
+    Route1 -> ControllerA;
+    Route2 -> ControllerB;
+    ControllerA -> ServiceX;
+    ControllerB -> ServiceY;
 }
 \enddot
 
-\subsection diagram_elements Diagram Elements
+\section interaction_sec Interaction Flow
 
-- **rectangle:** Represents a JavaScript module or external library.
-- **ES6 Module**: Indicates a module using ES6 import/export syntax.  Although the source code shows the Javascript code to be setting up a Javascript file, the diagram indicates its structure for documentation purposes.
-- **(External Library):** Indicate external library, for example JQuery
-- **(Browser API):** Indicate APIs provided by a browser to be used by our script.
-- **`->`:** Represents a dependency or usage relationship. The arrow points from the module that uses the other module.
-- **`label`:** Describes the module and its key features.
+The diagram shows the flow of interaction between different components:
 
-\section es6_commonjs ES6 Modules and CommonJS
+- **Modules**: Represent high-level features or functionalities.
+- **Services**: Provide reusable business logic.
+- **Routes**: Define API endpoints.
+- **Controllers**: Handle incoming requests and interact with services.
 
-This project primarily uses standard Javascript structure, but modern best practices are followed.
+1. A request is received by a Route (e.g., Route1).
+2. The Route forwards the request to a Controller (e.g., ControllerA).
+3. The Controller invokes one or more Services (e.g., ServiceX) to perform the necessary operations.
+4. Modules might use services.
+
+\section es6_commonjs_sec ES6 Imports and CommonJS Require
+
+The project supports both ES6 imports and CommonJS require statements for module dependencies. Here's how they are handled:
+
+- **ES6 Imports**:
+  ```javascript
+  // Example of ES6 import
+  import { someFunction } from './moduleA';
+  someFunction();
+  ```
+
+- **CommonJS Require**:
+  ```javascript
+  // Example of CommonJS require
+  const someModule = require('./moduleB');
+  someModule.anotherFunction();
+  ```
+
+\section javascript_files JavaScript Files Explanation
+
+- **clipboard.js:** This script adds "copy to clipboard" functionality to code fragments within the generated documentation. It leverages the browser's clipboard API to enable users to easily copy code snippets.
+- **cookie.js:**  This file provides helper functions for managing cookies within the documentation website. It allows for reading, writing, and erasing settings stored in cookies, improving user experience and persisting preferences.
+- **dir_*.js:** These files are automatically generated by Doxygen and contain directory listings of the source code.  They map directories to their corresponding files, which are used in the documentation navigation structure.
+- **dynsections.js:** This script handles the dynamic display and toggling of sections within the generated documentation. It provides functions for expanding and collapsing sections, improving readability and navigation through the documentation.
 */
 ```
 */
