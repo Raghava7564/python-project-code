@@ -1,7 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_sudoku___python_geeks_8py.html":[2,0,0,0,0,0,0,0,0],
-"dir_1e919f3d4a0ad6e3be2ba0de4bb47ca5.html":[2,0,0,0,0,0,0,0],
+"dir_0b99bf12924843dc6a6408119ebe7bbd.html":[2,0,0,0,0,0,0,0],
 "dir_2e2cf961d4924b6384babb753794eb6a.html":[2,0,0,0,0,0],
 "dir_559004cf293a0dab7dbc8b3429cf516d.html":[2,0,0,0],
 "dir_57f72b5a68868f94b829f3bc2c7260a4.html":[2,0,0,0,0],
