@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['solving_0',['solving',['../namespace_sudoku___python_geeks.html#a2aa46f250f9b223d6f037d6539409b78',1,'Sudoku_PythonGeeks']]]
+  ['view_0',['View',['../content_8dox.html#a98bd088487a33c97e27c4765917a247a',1,'content.dox']]]
 ];
