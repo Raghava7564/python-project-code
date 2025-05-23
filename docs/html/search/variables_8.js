@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['original_5fgrid_0',['original_grid',['../namespace_sudoku___python_geeks.html#af97e8447fa62552fade77e0191522f82',1,'Sudoku_PythonGeeks']]]
+  ['renders_0',['Renders',['../content_8dox.html#a7fc975559e500d51eb975eaf34517d9b',1,'content.dox']]],
+  ['response_5fapi_1',['response_API',['../namespace_sudoku___python_geeks.html#af5c3cc80ef7e5ed4fa19f1616cf26d81',1,'Sudoku_PythonGeeks']]]
 ];
