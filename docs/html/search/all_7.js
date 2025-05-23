@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['label_0',['label',['../content_8dox.html#aa3f101a1838c22a148ebf1ae45037709',1,'content.dox']]],
-  ['links_1',['Links',['../content_8dox.html#ae46f09fa6ba6ca6dd712aa6375ffff28',1,'content.dox']]]
+  ['solving_0',['solving',['../namespace_sudoku___python_geeks.html#a2aa46f250f9b223d6f037d6539409b78',1,'Sudoku_PythonGeeks']]],
+  ['sudoku_5fpythongeeks_1',['Sudoku_PythonGeeks',['../namespace_sudoku___python_geeks.html',1,'']]],
+  ['sudoku_5fpythongeeks_2epy_2',['Sudoku_PythonGeeks.py',['../_sudoku___python_geeks_8py.html',1,'']]],
+  ['sudoku_5fsolver_3',['Sudoku_solver',['../namespace_sudoku___python_geeks.html#a57063d58bc8ea085c556114f84ee21b5',1,'Sudoku_PythonGeeks']]]
 ];
